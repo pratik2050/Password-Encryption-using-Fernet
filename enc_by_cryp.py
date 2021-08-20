@@ -7,7 +7,7 @@ if os.stat("fkey.key").st_size == 0:
     fer = Fernet(key)
     file.write(key)
     file.close()
-else:                                                                                         #made by Pratik 
+else:                                                                                         ## made by Pratik 
     key = file.read()
     fer = Fernet(key)
     file.close()
@@ -29,7 +29,7 @@ while True:
     do = input("To add an new password type 'add' (OR) to view and existing one type 'view', Press q to exit.....")
     if do == "q":
         break
-    if do == "view":                                                                    #made by Pratik
+    if do == "view":                                                                    ## made by Pratik
         view()
     elif do == "add":
         add()
