@@ -8,7 +8,6 @@ if os.stat("fkey.key").st_size == 0:
     file.write(key)
     file.close()
 else:                                                                                         #made by Pratik 
-    file = open("fkey.key", "rb")
     key = file.read()
     fer = Fernet(key)
     file.close()
